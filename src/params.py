@@ -1,0 +1,38 @@
+import argparse
+
+def get_args():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--epochs', type=int, default=50)
+    parser.add_argument('--model', type=str, default="mobilenet")
+    parser.add_argument('--task_type', type=str, default="lat_lon") # ["lat_lon", "cartesian", "classification", "geoclip", "audio_geoclip"]
+    parser.add_argument('--optim', type=str, default="nesterov")
+    parser.add_argument('--lr', type=float, default=0.05)
+    parser.add_argument('--wd', type=float, default=1e-5)
+    parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--eval_freq', type=int, default=50)
+    parser.add_argument('--save_freq', type=int, default=5)
+    parser.add_argument('--exp_name', type=str, default="")
+    parser.add_argument('--model_weight', type=str, default="")
+    parser.add_argument('--encoder_weight', type=str, default="")
+    parser.add_argument('--mode', type=str, default="train")
+    parser.add_argument('--mixup', default=False, action="store_true",)
+    parser.add_argument('--mixup_alpha', type=float, default=1.0)
+    parser.add_argument('--pretrained', default=False, action="store_true",)
+    parser.add_argument('--sound_aug', default=False, action="store_true",)
+    parser.add_argument('--loss', type=str, default="")
+    parser.add_argument('--dropout', type=float, default=0)
+    parser.add_argument('--geo_resolution', type=float, default=0.1)
+    parser.add_argument('--clip_scale', default=False, action="store_true")
+    parser.add_argument('--geo_gallery', type=str, default="train")
+    parser.add_argument('--loc_enc', nargs='+')
+    parser.add_argument('--tasks', nargs='+')
+    parser.add_argument('--sinr_feat', default=False, action="store_true")
+    parser.add_argument('--val_only', default=False, action="store_true")
+    parser.add_argument('--bottleneck_dim', type=int, default=128)
+    parser.add_argument('--iter_fraction', type=float, default=1.0)
+    parser.add_argument('--custom_gallery', type=str, default="")
+    parser.add_argument('--bce_weight', type=float, default=0.0)
+    args = parser.parse_args()
+    return args
