@@ -32,6 +32,10 @@ python3 setup/make_galleries.py
 
 Set the variables in [config](./src/config.py) to appropriate paths after setting up the dataset. 
 
+### Released Models and Predictions
+
+Please find [here](https://drive.google.com/drive/folders/1USbpyxMxSXtNf6e_aKT3qO7FeqU7xeJo?usp=sharing). To run evaluation with a model, please use the corresponding command from below, set `--mode eval` and pass the corresponding model weight with `--model_weight`.
+
 ### Regression
 
 ~~~
