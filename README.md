@@ -1,5 +1,8 @@
 # Audio Geolocation: A Natural Sounds Benchmark
 
+[[Benchmark](https://github.com/cvl-umass/nat-sound2loc-benchmark)][[Model Weights](https://drive.google.com/drive/folders/1USbpyxMxSXtNf6e_aKT3qO7FeqU7xeJo?usp=sharing)]
+
+
 <p align="center">
   <img src="assets/figure1.png" alt="Bar plot" >
   <br>
@@ -27,6 +30,17 @@ python3 setup/make_galleries.py
 ~~~
 
 
+## Environment setup
+
+Please follow corresponding instructions to install and setup 
+
+- H3 [[here](https://github.com/uber/h3)]
+- GeoCLIP [[here](https://github.com/VicenteVivan/geo-clip)]
+- SatCLIP [[here](https://github.com/microsoft/satclip)]
+- GeoCLAP [[here](https://github.com/mvrl/geoclap)]
+- TaxaBind [[here](https://github.com/mvrl/TaxaBind)]
+
+Experiments ran with `pytorch==2.4.1` and `torchvision==0.15.2`.
 
 ## Instructions to Reproduce Experiments
 
