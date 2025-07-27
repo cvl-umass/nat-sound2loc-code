@@ -1,6 +1,6 @@
 # Audio Geolocation: A Natural Sounds Benchmark
 
-[[Benchmark](https://github.com/cvl-umass/nat-sound2loc-benchmark)][[Model Weights](https://drive.google.com/drive/folders/1USbpyxMxSXtNf6e_aKT3qO7FeqU7xeJo?usp=sharing)]
+[[Benchmark](https://github.com/cvl-umass/nat-sound2loc-benchmark)][[Model Weights](https://drive.google.com/drive/folders/1USbpyxMxSXtNf6e_aKT3qO7FeqU7xeJo?usp=sharing)][[arxiv](https://arxiv.org/abs/2505.18726)]
 
 
 <p align="center">
