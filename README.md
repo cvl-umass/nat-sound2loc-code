@@ -13,7 +13,7 @@ Can we determine someone’s geographic location purely from the sounds they hea
 
 ## Dataset Setup 
 
-Download [iNatSounds](https://github.com/visipedia/inat_sounds/tree/main/2024) and [XCDC](). 
+Download [iNatSounds](https://github.com/visipedia/inat_sounds/tree/main/2024) and [XCDC](https://zenodo.org/records/15420487). 
 
 Extract spectrograms from raw waveforms using [get_spectrograms](./setup/get_spectrograms.py). 
 
